@@ -22,16 +22,16 @@
 </head>
 <body>
 
-<div id="message">楽しかった?www 2回クリックするとすべてを解除できます</div>
+<div id="message">楽しかった?www このサイトを2回クリックするとすべてを解除できます</div>
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     document.body.addEventListener('click', () => {
       if (document.documentElement.requestFullscreen) {
         document.documentElement.requestFullscreen();
-      } else if (document.documentElement.webkitRequestFullscreen) { // Safari対応
+      } else if (document.documentElement.webkitRequestFullscreen) {
         document.documentElement.webkitRequestFullscreen();
-      } else if (document.documentElement.msRequestFullscreen) { // IE対応
+      } else if (document.documentElement.msRequestFullscreen) {
         document.documentElement.msRequestFullscreen();
       }
     });
